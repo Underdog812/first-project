@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 손흥민선수 공식 홈페이지 </title>
+    <!-- link (enter) -->
+    <!-- / -> 폴더 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- 페비콘 -->
+    <link rel="shoutcut icon" href="images/fv2.png">
+	
+    <!-- script:src -->
+    <script src="script/jquery-1.11.3.js"></script>
+    <script src="script/jquery.innerfade.js"></script>
+    <script>
+        // 페이드인아웃 - 플러그인
+        $(function(){
+            $('.inner-fade').innerfade({
+                animationtype:'fade',
+                timeout:2000 
+                // 2000 -> 2초 
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- #wrap>header+section.me+section.photo+footer -->
+    <div id="wrap">
+        <!-- header -->
+        <header>
+            <!-- .logo+.menu (enter) -->
+            <div class="logo">
+                <!-- a{ANSEON} -->
+                <a href="index.html">SHM</a>
+            </div>
+            <div class="menu">
+                <!-- ul>li*6>a{menu} (enter)-->
+                <ul>
+                    <li><a href="#">손흥민</a></li>
+                    <li><a href="#">스토리</a></li> 
+                    <li><a href="#">경기</a></li> 
+                    <li><a href="#">포토갤러리</a></li>
+                    <li><a href="bbs.html">커뮤니티</a></li> 
+                    <li><a href="join.html">회원가입</a></li> 
+                </ul>
+            </div>
+        </header>
+
+        <section class="me">
+          <!-- ul>li>a>img -->
+          <ul class="inner-fade">
+              <li><a href="#"><img src="images/slider1.jpg" alt="손흥민1"></a></li>
+              <li><a href="#"><img src="images/slider2.jpg" alt="손흥민2"></a></li>
+              <li><a href="#"><img src="images/slider3.jpg" alt="손흥민3"></a></li>
+          </ul>
+        </section> 
+        <section class="info">
+            <!-- .notice+.banner -->
+            <div class="notice">
+                <h1>공지사항</h1>
+                <!-- ul>li>span.t+a+span -->
+                <ul>
+                    <li><span class="a1">[보도자료]</span><a href="#"> 천안시에 전국최고의 축구.유아체육시설을............... </a><span>21-03-17</span></li>
+                    <li><span class="a1">[보도자료]</span><a href="#"> 천안시에 전국최고의 축구.유아체육시설을............... </a><span>21-03-17</span></li>
+                    <li><span class="a2">[커뮤니티]</span><a href="#"> 봄나들이 가실분 신청받아요~~!! 마감임박~~~               </a><span>21-03-17</span></li>
+                    <li><span class="a2">[커뮤니티]</span><a href="#"> 봄나들이 가실분 신청받아요~~!! 마감임박~~~            </a><span>21-03-17</span></li>
+                    <li><span class="a2">[커뮤니티]</span><a href="#"> 봄나들이 가실분 신청받아요~~!! 마감임박~~~            </a><span>21-03-17</span></li>
+                    <li><span class="a3">[고민상담]</span><a href="#"> 축구가 제 인생의 전부인줄 알았어요....그런데 @ @;;;;;</a><span>21-03-17</span></li>
+                    <li><span class="a3">[고민상담]</span><a href="#"> 축구가 제 인생의 전부인줄 알았어요....그런데 @ @;;;;;</a><span>21-03-17</span></li>
+                </ul>
+            </div>
+            <div class="banner">
+                <!-- a>img -->
+                <a href="#"><img src="images/banner.jpg" alt="배너"></a>
+            </div>
+        </section>    
+        <section class="photo">
+            <!-- a>img -->
+            <a href="#"><img src="images/img_01.jpg" alt="이미지1"></a>
+            <a href="#"><img src="images/img_02.jpg" alt="이미지2"></a>
+            <a href="#"><img src="images/img_03.jpg" alt="이미지3"></a>
+            <a href="#"><img src="images/img_04.jpg" alt="이미지4"></a>
+            <a href="#"><img src="images/img_05.jpg" alt="이미지5"></a>
+            <a href="#"><img src="images/img_06.jpg" alt="이미지6"></a>
+        </section>
+        <footer>
+
+            <!-- .blogo+.copyright+.sns -->
+            <div class="blogo">
+               <a href="index.html">SHM</a>
+            </div>
+            <div class="copyright">
+                <p>
+                    손흥민선수 공식 홈페이지 / 펜카페 리더 : 손영자  <br />
+                    Copyright &copy; 2021  
+                    <a href="mailto:samsung@samsung.co.kr">SHM</a> 
+                    All Rights Reserved.
+                </p>
+    
+            </div>
+            <div class="sns">
+                <!-- ul>li>a>img -->
+                <ul>
+                    <li><a href="#"><img src="images/f.png" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="images/y.png" alt="유튜브"></a></li>
+                    <li><a href="#"><img src="images/t.png" alt="트위터"></a></li>
+                    <li><a href="#"><img src="images/b.png" alt="밴드"></a></li>
+                    <li><a href="#"><img src="images/i.png" alt="인스타그램"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
