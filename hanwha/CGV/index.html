@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CGV </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        // 따라디니는 퀵메뉴 
+        // .scrollTop : 이동한 위칫값 반환
+        $(function(){
+		
+
+            $(window).scroll(function(){
+                var scrollTopNum = $(document).scrollTop()+15;
+                if(scrollTopNum<=150){
+                    scrollTopNum=150;
+                }
+                $("#quick-inner").stop().animate({top:scrollTopNum},700)
+            });
+
+         
+        });
+    </script>
+</head>
+<body>
+    <!-- #wrap>header>nav>.logo+.topNav+.menu -->
+    <div id="wrap">
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="#"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <div class="topNav">
+                    <!-- ul>li*5>a{사이트맵} -->
+                    <ul>
+                        <li><a href="#">사이트맵</a></li>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>                        
+                        <li class="sr">
+                            <input type="text" placeholder="search" title="검색어입력" class="input-text">
+                            <input type="image" src="images/search.png" alt="검색" class="input-img">
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <!-- ul>li*6>a{예매} -->
+                    <ul>
+                        <li><a href="#" class="gr">예매</a></li>
+                        <li><a href="#">영화</a></li>
+                        <li><a href="#">극장</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="slider">
+                <div class="sliderList">
+                    <div class="sliderImg"><a href="#"><img src="images/slider1.jpg" alt="sldier1"></a></div>
+                    <div class="sliderImg"><a href="#"><img src="images/slider2.jpg" alt="sldier2"></a></div>
+                    <div class="sliderImg"><a href="#"><img src="images/slider3.jpg" alt="slider3"></a></div>
+                </div> 
+            </div>
+        </header>
+        <!-- section.contents>.banner+.items>.mv*9>a>img --> 
+        <section class="contents">
+            <div class="items">
+                <div class="mv"><a href="#"><img src="images/movie1.jpg" alt="영화1"></a></div>
+                <div class="mv"><a href="#"><img src="images/movie2.jpg" alt="영화2"></a></div>
+                <div class="mv"><a href="#"><img src="images/movie3.jpg" alt="영화3"></a></div>
+                <div class="mv"><a href="#"><img src="images/movie4.jpg" alt="영화4"></a></div>
+                <div class="mv"><a href="#"><img src="images/movie5.jpg" alt="영화5"></a></div>
+                <div class="mv"><a href="#"><img src="images/movie6.jpg" alt="영화6"></a></div>
+                <div class="mv"><a href="#"><img src="images/movie7.jpg" alt="영화7"></a></div>
+                <div class="mv"><a href="#"><img src="images/movie8.jpg" alt="영화8"></a></div>
+                <div class="mv"><a href="#"><img src="images/movie9.jpg" alt="영화9"></a></div>
+            </div>
+            <div class="banner">
+                <ul>
+                    <li><a href="#"><img src="images/banner.png" alt=""></a></li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+        <div class="blogo"><a href="#"><img src="images/blogo.png" alt=""></a></div>
+        <div class="copyright">
+            (04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)<br>
+            대표이사 : 허민회 | 사업자등록번호 : 104-81-45690 | 통신판매업신고번호 : 2017-서울용산-0662 <br>
+            호스팅사업자 : CJ올리브네트웍스 | 개인정보보호 책임자 : 심준범 | 대표이메일 : cjcgvmaster@cj.net | CGV고객센터 : 1544-1122
+        </div>
+        <div class="b">
+            <div class="b1">
+                <ul class="n">
+                    <li><a href="#"><img src="images/b.png" alt="밴드"></a></li>
+                    <li><a href="#"><img src="images/f.png" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="images/i.png" alt="인스타그램"></a></li>
+                    <li><a href="#"><img src="images/t.png" alt="트위터"></a></li>
+                    <li><a href="#"><img src="images/y.png" alt="유튜브"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+        <div id="quick-inner">
+            <div class="quick">
+                <a href="#" class="item item1"><i class="icon"></i>빠른예매</a>
+                <a href="#" class="item item2"><i class="icon"></i>이벤트</a>
+                <a href="#" class="item item3"><i class="icon"></i>영화</a>
+                <a href="#" class="item item4"><i class="icon"></i>극장찾기</a>
+                <a href="#" class="item item5"><i class="icon"></i>맴버십</a>                          
+                <a href="#" class="item item6"><i class="icon"></i></a>
+            </div> 
+        </div> 
+    </div>
+</body>
+</html>
